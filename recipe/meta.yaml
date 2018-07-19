@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.1.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/janitor_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/janitor/janitor_{{ version }}.tar.gz
-  sha256: e9a8ed543b637a073083addf366630b663253bdd12da5488e8de9f8934c2d560
+  sha256: 7cf9feab0fa6978c032f412f2a8f577ee2e52f140611229fbe26f8e7bc5402a1
 
 build:
   number: 0
