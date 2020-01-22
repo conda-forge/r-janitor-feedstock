@@ -1,4 +1,4 @@
-{% set version = '1.2.0' %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/janitor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/janitor/janitor_{{ version }}.tar.gz
-  sha256: 5e15a2292c65c5ddd6160289dec2604b05a813651a2be0d7854ace4548a32b8c
+  sha256: 91aae9231f105e28222b5e5b1513af1731bba5bc0d214cc4e73379debe98eae9
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,6 +48,7 @@ test:
 about:
   home: https://github.com/sfirke/janitor
   license: MIT
+  license_file: LICENSE
   summary: 'The main janitor functions can: perfectly format data.frame column names; provide
     quick counts of variable combinations (i.e., frequency tables and crosstabs); and
     isolate duplicate records. Other janitor functions nicely format the tabulation
