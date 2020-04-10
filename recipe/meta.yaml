@@ -26,18 +26,28 @@ requirements:
   host:
     - r-base
     - r-dplyr >=0.7.0
+    - r-lifecycle
+    - r-lubridate
     - r-magrittr
     - r-purrr
     - r-rlang
+    - r-stringi
+    - r-stringr
     - r-snakecase >=0.9.2
+    - r-tidyselect >=1.0.0
     - r-tidyr >=0.7.0
   run:
     - r-base
     - r-dplyr >=0.7.0
+    - r-lifecycle
+    - r-lubridate
     - r-magrittr
     - r-purrr
     - r-rlang
+    - r-stringi
+    - r-stringr
     - r-snakecase >=0.9.2
+    - r-tidyselect >=1.0.0
     - r-tidyr >=0.7.0
 
 test:
